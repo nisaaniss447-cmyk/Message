@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#10172f">
+<meta name="description" content="Sebuah surat kecil untuk seseorang yang begitu berarti.">
+<title>Untuk Sayangg, dengan sepenuh hati ♡</title>
+<style>
+
+:root{
+  --ink:#11172d; --ink2:#1a2442; --cream:#fff8f1; --muted:#c8cce0;
+  --rose:#efb8c8; --lilac:#c8c7f3; --gold:#e8d5b0; --line:#ffffff24;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cream);font-family:Georgia,"Times New Roman",serif;background:
+radial-gradient(ellipse at 12% 8%,#687eb044,transparent 34%),
+radial-gradient(ellipse at 88% 35%,#bd8ba833,transparent 32%),
+linear-gradient(155deg,#10162b 0%,#192342 55%,#11182f 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.19;z-index:-1;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px}
+button,a{font:inherit}
+a{color:inherit}
+.wrap{width:min(900px,88%);margin:auto}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:72px 20px;position:relative;isolation:isolate}
+.hero-inner{max-width:740px;position:relative;z-index:1}
+.eyebrow{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);background:#ffffff0c;padding:10px 17px;border-radius:99px;color:#e2e4f2;font:600 .7rem/1.4 Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;backdrop-filter:blur(10px)}
+.spark{color:var(--gold)}
+h1{font:normal clamp(4rem,13vw,8rem)/.9 Georgia,serif;letter-spacing:-.065em;margin:34px 0 24px;text-shadow:0 12px 50px #05091688}
+h1 span{display:block;color:var(--rose);font-style:italic;font-size:.9em;margin-top:12px}
+.lead{max-width:570px;margin:auto;color:#d6d9e8;font:400 clamp(1rem,2.8vw,1.15rem)/2 Arial,sans-serif}
+.open-btn{margin-top:35px;border:0;border-radius:99px;padding:15px 25px;color:#1a2039;background:linear-gradient(110deg,#f4cbd5,#d4d0f2 60%,#e8d5b0);font:700 .9rem Arial,sans-serif;box-shadow:0 12px 35px #080e214d;cursor:pointer;transition:.25s}
+.open-btn:hover{transform:translateY(-3px);box-shadow:0 17px 42px #080e2177}
+.hint{margin-top:17px;color:#aeb8d1;font:italic .88rem Georgia,serif}
+.orbit{position:absolute;z-index:-1;border:1px solid #ffffff16;border-radius:50%;width:min(82vw,650px);aspect-ratio:1;left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:0 0 90px #aeb8ee0a,inset 0 0 90px #aeb8ee08}
+.orbit:before,.orbit:after{content:"✧";position:absolute;color:var(--gold);font-size:25px}
+.orbit:before{top:12%;right:14%}.orbit:after{bottom:13%;left:10%;color:var(--rose)}
+.floating{position:absolute;font-size:25px;color:#f2d5dfaa;animation:float 7s ease-in-out infinite}
+.f1{top:19%;left:10%}.f2{right:10%;top:27%;animation-delay:1.2s}.f3{bottom:15%;right:14%;animation-delay:2.2s}
+@keyframes float{50%{transform:translateY(-17px) rotate(12deg)}}
+section{padding:88px 0}
+.kicker{text-align:center;color:var(--gold);font:600 .68rem Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;margin-bottom:15px}
+h2{font:normal clamp(2.35rem,7vw,4rem)/1.1 Georgia,serif;text-align:center;letter-spacing:-.035em;margin:0 0 18px}
+.section-intro{text-align:center;max-width:590px;margin:0 auto 38px;color:#c5cbe0;font:400 .98rem/1.9 Arial,sans-serif}
+.letter{max-width:760px;margin:auto;padding:clamp(27px,6vw,62px);border:1px solid #ffffff26;border-radius:30px;background:linear-gradient(145deg,#ffffff13,#ffffff07);box-shadow:0 28px 85px #070d20a0;position:relative;overflow:hidden;backdrop-filter:blur(12px)}
+.letter:before{content:"♡";position:absolute;right:25px;top:0;font:5rem Georgia,serif;color:#f0b8c91b}
+.letter:after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--rose),var(--lilac),var(--gold))}
+.letter p{font:400 1rem/2.05 Arial,sans-serif;margin:0 0 19px;color:#e5e7f0;position:relative}
+.letter .salute{font:italic 1.5rem Georgia,serif;color:var(--rose);margin-bottom:23px}
+.letter .sign{font:italic 1.3rem/1.7 Georgia,serif;color:#d4d0f2;margin:30px 0 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{padding:30px 22px;border:1px solid #ffffff20;border-radius:24px;background:linear-gradient(150deg,#ffffff12,#ffffff06);text-align:center;transition:.25s;backdrop-filter:blur(8px)}
+.card:hover{transform:translateY(-6px);background:#ffffff16}
+.card .icon{font-size:2rem;color:var(--rose)}
+.card h3{font:normal 1.35rem Georgia,serif;color:var(--rose);margin:16px 0 11px}
+.card p{font:400 .9rem/1.8 Arial,sans-serif;color:#cbd2e5;margin:0}
+.quote-box{max-width:780px;margin:auto;text-align:center;padding:clamp(34px,7vw,70px) 25px;border-radius:32px;border:1px solid #ffffff27;background:linear-gradient(120deg,#758fc72b,#b8b9ed1c,#f0b8c91d);box-shadow:inset 0 0 70px #ffffff06,0 25px 75px #070d2055}
+.quote-box .big-heart{font-size:2.2rem;color:var(--rose)}
+.quote-box p{font:normal clamp(1.45rem,4.5vw,2.35rem)/1.55 Georgia,serif;color:#f8edf0;margin:18px auto 0;max-width:670px}
+.secret{text-align:center}
+.secret-btn{background:transparent;border:1px solid #f0b8c9a0;border-radius:99px;color:#f6cbd8;padding:14px 23px;cursor:pointer;transition:.2s}
+.secret-btn:hover{background:#f0b8c91a}
+.secret-message{display:none;max-width:670px;margin:25px auto 0;padding:27px;border-radius:23px;background:#ffffff0d;border:1px solid #ffffff20;color:#e9e6f2;font:400 .98rem/1.95 Arial,sans-serif}
+.secret-message.show{display:block;animation:appear .5s ease}
+@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:40px 15px 55px;color:#aeb9d4;font:400 .82rem/1.9 Arial,sans-serif}
+footer span{color:var(--rose)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:680px){
+ section{padding:66px 0}.cards{grid-template-columns:1fr;gap:13px}.card{padding:25px 22px}
+ .hero{padding-top:max(55px,env(safe-area-inset-top));padding-bottom:max(55px,env(safe-area-inset-bottom))}
+ .orbit{width:92vw}.letter p{font-size:.96rem;line-height:1.95}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="orbit"></div><span class="floating f1">✧</span><span class="floating f2">♡</span><span class="floating f3">✦</span>
+  <div class="hero-inner">
+    <div class="eyebrow"><span class="spark">✦</span> sebuah pesan kecil untuk seseorang <span class="spark">✦</span></div>
+    <h1>Untuk <span>Sayangg</span></h1>
+    <p class="lead">Ada banyak hal yang mungkin belum sempat aku ucapkan. Jadi, kali ini aku ingin menitipkannya di sini—supaya kamu bisa membacanya kapan pun kamu mau.</p>
+    <button class="open-btn" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">Ada surat untukmu ♡</button>
+    <div class="hint">dibaca pelan-pelan, ya.</div>
+
+    
+    
+
+</header>
+
+<main>
+<section id="letter">
+ <div class="wrap reveal">
+  <div class="kicker">dari hati yang tulus</div>
+  <h2>Terima kasih sudah ada.</h2>
+  <p class="section-intro">Untuk semua hal yang kadang sulit dijelaskan dengan kata-kata.</p>
+  <article class="letter">
+   <p class="salute">Hai, sayangg.</p>
+   <p>Aku ingin berhenti sebentar dari ramainya hari, lalu mengucapkan satu hal yang mungkin sederhana, tetapi sangat berarti: terima kasih.</p>
+   <p>Terima kasih karena sudah hadir di hidupku. Terima kasih karena sampai hari ini masih mau berjalan bersamaku, berbagi cerita, meluangkan waktu, dan menjadi bagian dari hari-hariku. Mungkin bagimu beberapa hal itu terlihat kecil, tetapi bagiku, semuanya punya tempat tersendiri di hati.</p>
+   <p>Aku tahu, mencintai dan menemani seseorang bukan selalu tentang hari-hari yang mudah. Ada saat ketika aku terlalu banyak berpikir, ketika rasa takut datang tanpa diminta, atau ketika aku belum bisa menyampaikan isi hati dengan cara yang tepat. Di saat seperti itu, terima kasih sudah mencoba memahami. Maaf jika terkadang aku masih perlu belajar banyak hal.</p>
+   <p>Aku tidak ingin menjanjikan bahwa kita akan selalu baik-baik saja atau tidak akan pernah berbeda pendapat. Kita manusia biasa, dengan lelah dan kurang masing-masing. Tapi aku berharap, ketika hari-hari sulit datang, kita tetap punya kemauan untuk saling mendengar, saling memperbaiki, dan tidak lupa bahwa kita berada di sisi yang sama.</p>
+   <p>Aku bersyukur mengenalmu. Bersyukur untuk tawa yang kita bagi, obrolan sederhana, perhatian kecil, dan semua momen yang mungkin tidak terlihat istimewa bagi orang lain, tetapi akan selalu punya arti untukku.</p>
+   <p>Terima kasih sudah membersamai aku hingga hari ini. Semoga perjalanan kita masih panjang. Semoga kita diberi banyak waktu untuk tumbuh, belajar, membuat kenangan, dan merayakan hal-hal kecil bersama. Tidak perlu terburu-buru; satu langkah baik demi satu langkah baik, asal kita menjalaninya dengan tulus.</p>
+   <p class="sign">Dengan seluruh rasa sayang yang ingin terus kujaga, ♡</p>
+  </article>
+ </div>
+</section>
+
+<section>
+ <div class="wrap reveal">
+  <div class="kicker">hal-hal yang ingin kamu tahu</div>
+  <h2>Aku menghargai kamu.</h2>
+  <p class="section-intro">Mungkin tidak semua hal selalu terucap, jadi biarkan halaman ini mengatakannya.</p>
+  <div class="cards">
+   <div class="card"><div class="icon">☾</div><h3>Waktumu berarti</h3><p>Terima kasih untuk waktu yang kamu sisihkan, bahkan untuk sekadar bertanya bagaimana hariku berjalan.</p></div>
+   <div class="card"><div class="icon">♡</div><h3>Usahamu terlihat</h3><p>Aku menghargai setiap perhatian, kesabaran, dan usaha kecil yang kamu berikan. Tidak ada yang ingin kuanggap remeh.</p></div>
+   <div class="card"><div class="icon">✧</div><h3>Kehadiranmu berharga</h3><p>Aku senang bisa mengenalmu dan punya kesempatan untuk menjalani sebagian perjalanan hidup ini bersamamu.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap reveal">
+  <div class="quote-box">
+   <div class="big-heart">♡</div>
+   <p>Aku tidak meminta kisah yang selalu sempurna. Aku hanya berharap kita terus punya alasan untuk saling memilih, saling menjaga, dan bertumbuh bersama.</p>
+  </div>
+ </div>
+</section>
+
+<section class="secret">
+ <div class="wrap reveal">
+  <div class="kicker">satu pesan terakhir</div>
+  <h2>Jangan tutup dulu.</h2>
+  <p class="section-intro">Masih ada satu hal kecil yang kusimpan khusus untukmu.</p>
+  <button class="secret-btn" onclick="const m=document.getElementById('secret');m.classList.toggle('show');this.textContent=m.classList.contains('show')?'Baca lagi kapan pun kamu mau ♡':'Buka pesan kecil ini ♡'">Buka pesan kecil ini ♡</button>
+  <div class="secret-message" id="secret">Jika suatu hari kamu merasa lelah, semoga kamu ingat bahwa dirimu juga pantas disayangi, dihargai, dan diperlakukan dengan lembut. Terima kasih sudah menjadi dirimu. Aku mungkin tidak selalu pandai merangkai kata, tetapi sungguh, aku senang kamu ada di sini. Aku sayang kamu, sayangg. 🤍</div>
+ </div>
+</section>
+</main>
+<footer>Dirangkai dengan banyak rasa sayang <span>♡</span><br><small>untuk seseorang yang begitu berarti</small></footer>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+</script>
+</body>
+</html>
